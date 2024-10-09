@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg p-6;
+  }
+  .card-position {
+    @apply flex gap-[10px]
+  }
+  .card-img {
+    @apply h-10 w-10 rounded-full border-2 border-white/50
+  }
+  .card-name-position {
+    @apply flex flex-col justify-center
+  }
+  .card-name {
+    @apply font-bold
+  }
+  .card-name-description {
+    @apply text-white/50
+  }
+  .card-description-p1 {
+    @apply mb-5 mt-5 text-[19px] font-[600]
+  }
+  .card-description-p2 {
+    @apply text-[13px] opacity-70 before:content-['“'] after:content-['”']
+  }
+}
